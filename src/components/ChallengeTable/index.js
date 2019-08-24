@@ -7,5 +7,6 @@ class ChallengeTable extends React.Component {
     return <div>Challenge</div>;
   }
 }
-
+/* FETCH API EXAMPLE MDFK
+ */
 export default ChallengeTable;

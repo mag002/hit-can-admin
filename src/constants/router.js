@@ -1,29 +1,43 @@
+import {
+  ChallengeCRUD,
+  CourseCRUD,
+  AccountCRUD,
+  ProblemCRUD,
+  ResultCRUD,
+  StudentCRUD
+} from "../components";
 export const ROUTER_TEACHER = [
   {
-    value: "chall",
-    label: "Challenge"
+    path: "/chall",
+    label: "Challenge",
+    component: ChallengeCRUD
   },
   {
-    value: "prob",
-    label: "Problem"
+    path: "/prob",
+    label: "Problem",
+    component: ProblemCRUD
   },
 
   {
-    value: "stu",
-    label: "Student"
+    path: "/stu",
+    label: "Student",
+    component: StudentCRUD
   },
   {
-    value: "res",
-    label: "Result"
+    path: "/res",
+    label: "Result",
+    component: ResultCRUD
   }
 ];
 export const ROUTER_ADMIN = [
   {
-    value: "cou",
-    label: "Courses"
+    path: "/cou",
+    label: "Courses",
+    component: CourseCRUD
   },
   {
-    value: "acc",
-    label: "Account"
+    path: "/acc",
+    label: "Account",
+    component: AccountCRUD
   }
 ];

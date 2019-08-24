@@ -19,7 +19,7 @@ export default function MenuAppBar() {
       <AppBar position="static">
         <Toolbar>
           {ROUTER_TEACHER.map(router => {
-            return <NavLink to={router.value}>{router.label}</NavLink>;
+            return <NavLink to={router.path}>{router.label}</NavLink>;
           })}
         </Toolbar>
       </AppBar>
