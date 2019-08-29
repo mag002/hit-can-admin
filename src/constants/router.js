@@ -1,11 +1,11 @@
 import {
-  ChallengeCRUD,
   CourseCRUD,
   AccountCRUD,
   ProblemCRUD,
   ResultCRUD,
   StudentCRUD
 } from "../components";
+import ChallengeCRUD from "../containers/ChallengeCRUD";
 export const ROUTER_TEACHER = [
   {
     path: "/chall",

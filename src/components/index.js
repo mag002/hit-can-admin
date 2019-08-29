@@ -8,6 +8,7 @@ import ProblemCRUD from "./ProblemCRUD";
 import ResultCRUD from "./ResultCRUD";
 import Sidebar from "./Sidebar";
 import StudentCRUD from "./StudentCRUD";
+import PageTitle from "./PageTitle";
 export {
   AccountCRUD,
   ChallengeCRUD,
@@ -18,5 +19,6 @@ export {
   ProblemCRUD,
   ResultCRUD,
   Sidebar,
-  StudentCRUD
+  StudentCRUD,
+  PageTitle
 };
