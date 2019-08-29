@@ -31,7 +31,7 @@ class ChallengeCRUD extends React.Component {
     this.props.challengeActions.fetchChallengeListRequest();
   }
   handleEditClick = (event, rowData) => {
-    alert.log(rowData.name);
+    alert(rowData.name);
   };
   render() {
     return (
