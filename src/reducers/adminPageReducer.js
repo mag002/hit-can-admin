@@ -1,6 +1,8 @@
 import * as adminPageContants from "../constants/adminPage";
+import { ADMIN_PAGE_TYPE } from "../constants/index";
 const initState = {
-  open: false
+  open: true,
+  type: ADMIN_PAGE_TYPE.CHALL
 };
 
 const adminPage_rdc = (state = initState, action) => {

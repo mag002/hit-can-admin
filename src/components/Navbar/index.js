@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { ROUTER_ADMIN, ROUTER_TEACHER } from "../../constants/router";
 import { NavLink } from "react-router-dom";
-import { Button, ButtonGroup, AppBar, Toolbar } from "@material-ui/core";
+import { Button, AppBar, Toolbar } from "@material-ui/core";
 const useStyles = makeStyles(theme => ({
   root: {
     backgroundColor: theme.color.primary,
@@ -25,7 +25,17 @@ export default function MenuAppBar() {
         <Toolbar>
           {ROUTER_TEACHER.map(router => {
             return (
-              <NavLink to={router.path}>
+              <NavLink to={router.path} key={Math.random()}>
+                {" "}
+                <Button size="large" className={classes.button}>
+                  {router.label}
+                </Button>
+              </NavLink>
+            );
+          })}
+          {ROUTER_ADMIN.map(router => {
+            return (
+              <NavLink to={router.path} key={Math.random()}>
                 {" "}
                 <Button size="large" className={classes.button}>
                   {router.label}

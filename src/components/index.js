@@ -9,6 +9,8 @@ import ResultCRUD from "./ResultCRUD";
 import Sidebar from "./Sidebar";
 import StudentCRUD from "./StudentCRUD";
 import PageTitle from "./PageTitle";
+import ChallengeForm from "./ChallengeForm";
+import CustomDropzone from "./CustomDropzone";
 export {
   AccountCRUD,
   ChallengeCRUD,
@@ -20,5 +22,7 @@ export {
   ResultCRUD,
   Sidebar,
   StudentCRUD,
-  PageTitle
+  PageTitle,
+  ChallengeForm,
+  CustomDropzone
 };

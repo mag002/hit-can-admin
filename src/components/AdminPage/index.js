@@ -25,7 +25,9 @@ class AdminPage extends Component {
                 <Route
                   path={route.path}
                   key={Math.random()}
-                  render={() => <route.component title={route.label} />}
+                  render={props => (
+                    <route.component {...props} title={route.label} />
+                  )}
                 />
               );
             })}

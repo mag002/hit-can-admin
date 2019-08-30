@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { ChallengeForm } from "..";
 
 const StyledSidebar = styled.aside`
   width: 80vw;
@@ -8,5 +9,9 @@ const StyledSidebar = styled.aside`
 `;
 
 export default function Sidebar() {
-  return <StyledSidebar>ssssss</StyledSidebar>;
+  return (
+    <StyledSidebar>
+      <ChallengeForm></ChallengeForm>
+    </StyledSidebar>
+  );
 }

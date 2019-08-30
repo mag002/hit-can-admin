@@ -8,5 +8,8 @@ const GlobalStyle = createGlobalStyle`
   a{
     text-decoration:none;
   }
+  img{
+    max-width:100%;
+  }
 `;
 export default GlobalStyle;
